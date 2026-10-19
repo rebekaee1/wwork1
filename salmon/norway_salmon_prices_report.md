@@ -53,7 +53,7 @@
   - Июль–октябрь: восстановление и боковик 70–75 с пиком 74,90 на нед. 32. Последняя неделя (41) — 72,55.
 - **Объёмы:** SSB показывает рост экспорта с 17–22 тыс. т в неделю в апреле–мае до 30–32 тыс. т в сентябре (нед. 39 — 32 385 т).
 - **К прошлому году:** нед. 40 на 5,0 % ниже 2025, нед. 39 на 7,9 % ниже, нед. 41 на 3,8 % ниже (75,38 в 2025). Летом, наоборот, выше: нед. 31 +21,4 %, нед. 32 +20,7 %, нед. 33 +12,9 %.
-- **Месячный средний (Sjømatrådet):** апрель — **82,02 NOK/кг** (на 1 % ниже апреля 2025). По остальным месяцам подтверждённой цифры нет.
+- **Месячные средние (Sjømatrådet, свежая целая рыба):** апрель — **82,02 NOK/кг** (−1 % к 2025), июль — **71,48** (+8 %), август — около **74** (+14 %). По маю, июню и сентябрю подтверждённой цены за кг нет. Май: экспорт лосося 9,6 млрд NOK (+1 %), сентябрь: 13 млрд NOK и 165 393 т.
 - **Сентябрь 2026:** рекорд — 165 393 т лосося, около 13 млрд NOK (+22 % по объёму, +15 % по стоимости). Это совокупные данные по лососю, а не цена за кг свежей рыбы.
 - **Справочно, нед. 23:** индекс SISALMON — 6,33 USD/кг (−6,2 % за неделю, +5,7 % к году). Подтверждённой недельной серии SISALMON в NOK/EUR получить не удалось.
 
@@ -66,7 +66,7 @@
    - Нед. 26: Sjømatrådet 68,10 (PDF) против 68,16 (таблица Akvafakta).
    - Нед. 28: SSB 69,54 против Akvafakta 70,56.
    - Нед. 36: SSB 69,71; отдельный фрагмент отчёта Sjømatrådet называл 71,98, подтвердить не удалось, поэтому в таблицу он не включён.
-4. **Не включено из-за неясного года:** «71,48 NOK/кг в июле» (месячный средний), «77,06 NOK/кг, нед. 20» и «68,74 NOK/кг, нед. 26» у DinBedrift. Статьи, судя по возрасту, относятся к 2025 году.
+4. **Не включено из-за неясного года:** «77,06 NOK/кг, нед. 20» и «68,74 NOK/кг, нед. 26» у DinBedrift (по возрасту статей это, вероятно, 2025). Июльское 71,48 и августовское ~74 приведены по пересказам пресс-релизов Sjømatrådet (Perishable News, Aquafeed, Kyst og Fjord), оригиналы не открывал; июль согласуется с недельными ценами 69,5–73,6.
 5. Значения Sjømatrådet за недели 19, 22, 25 взяты из выдержек PDF, где колонки разобраны неидеально.
 
 ## Как закрыть оставшиеся пропуски
@@ -89,4 +89,5 @@
 - Akvafakta, недельная таблица (нед. 26–29): [siste.pdf](https://akvafakta.no/wp-content/uploads/Ukestat/siste.pdf)
 - Salmon Business (пересказ SSB): [нед. 32](https://www.salmonbusiness.com/statistics-norway-salmon-price-up-21-year-on-year-in-week-32/), [нед. 33–34](https://www.salmonbusiness.com/statistics-norway-salmon-export-price-falls-3-as-volumes-rise/), [нед. 39](https://www.salmonbusiness.com/statistics-norway-week-39-exports-jump-38-as-price-rises-above-e6-70-kg), [нед. 40](https://www.salmonbusiness.com/statistics-norway-export-prices-edge-higher-as-weekly-volumes-fall/)
 - IndexBox (пересказ Sjømatrådet и Sitagri): [нед. 22](https://www.indexbox.io/blog/norwegian-fresh-salmon-exports-rise-in-week-22-of-2026/), [нед. 37](https://www.indexbox.io/blog/norwegian-fresh-salmon-exports-rise-in-week-37-while-prices-ease/), [нед. 38](https://www.indexbox.io/blog/norwegian-fresh-salmon-exports-rise-in-week-38-of-2026/), [нед. 39](https://www.indexbox.io/blog/norwegian-salmon-exports-rise-in-week-39-of-2026-as-prices-slip/), [нед. 40](https://www.indexbox.io/blog/norwegian-fresh-salmon-exports-rise-in-week-40-of-2026/), [нед. 41](https://www.indexbox.io/blog/norwegian-fresh-salmon-exports-rise-in-week-41-of-2026/), [Sitagri, нед. 21](https://www.indexbox.io/blog/norwegian-salmon-prices-decline-again-in-q2-2026-sitagri-data-shows/), [Q2 2026](https://www.indexbox.io/blog/norwegian-salmon-export-prices-decline-in-q2-2026-amid-rising-volumes/)
+- Месячные данные Sjømatrådet в пересказах: [июль (Perishable News)](https://perishablenews.com/seafood/record-levels-of-norwegian-seafood-exports-in-july/), [август (Kyst og Fjord)](https://www.kystogfjord.no/debatt/o/K8kld4/sterk-sommer-for-sjoematen), [сентябрь, iLaks](https://ilaks.no/rekordvolumer-loftet-lakseeksporten-til-nye-hoyder-i-september/)
 - Справочно: [SeafoodSource, нед. 23](https://www.seafoodsource.com/news/supply-trade/atlantic-salmon-from-norway-drops-in-price-again-in-week-23), [FishFarmingExpert, нед. 40](https://www.fishfarmingexpert.com/salmon-spot-price/norway-salmon-spot-price-climbed-close-to-nok-70-per-kilo-last-week/2193273), [Fish Pool SISALMON](https://fishpool.eu/sisalmoni/), [Infosalmon Market Update Jun 26](https://infosalmon.cl/wp-content/uploads/2026/06/Market-Update-Jun-26.pdf)
