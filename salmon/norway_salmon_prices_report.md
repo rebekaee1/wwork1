@@ -1,93 +1,97 @@
 # Официальные цены на лосось (Норвегия), апрель – октябрь 2026
 
-Срез на 19.10.2026. Окно: ISO-недели 17–41 (20 апр – 11 окт 2026); нед. 16 добавлена для контекста.
-Те же данные в CSV: `norway_salmon_weekly_2026.csv`.
+Данные получены из первоисточников 19.10.2026:
+- **SSB (Statistics Norway):** недельная таблица 03024 (API `data.ssb.no`) и месячная таблица 08799 (внешняя торговля по товарным кодам).
+- **Sjømatrådet (Norges sjømatråd):** недельные отчёты `ukestat-laks-og-orret` за недели 14–40, пересчитанные из данных TAD/SSB; плюс месячные пресс-релизы.
+
+Окно: ISO-недели 17–41 (20 апр – 11 окт 2026) и месяцы апрель – сентябрь. Недели 14–16 добавлены для контекста (отмечены ᵃ).
 
 ## Что это за цены
 
-«Официальная» цена лосося в Норвегии — это **экспортная цена свежего лосося (NOK/кг, на границе)**. Её считает Statistics Norway (SSB) по таможенным декларациям (экспортная стоимость на границе ÷ нетто-вес), включая фрахт и терминальные расходы. Норвежский совет по морепродуктам (Sjømatrådet) публикует схожие недельные данные (FOB, норвежская граница). Это не розница и не биржевой спот.
+Официальная цена лосося в Норвегии — экспортная цена на границе (NOK/кг), включая фрахт и терминальные расходы. SSB считает её как экспортную стоимость ÷ нетто-вес по таможенным декларациям. Это не розница и не спот-цена производителя.
 
-Две серии совпадают не всегда: разница до 1–2,5 NOK (нед. 19: 82,58 против 85,02).
+## Недельные цены
 
-## Недельные цены, NOK/кг (свежий лосось, экспорт)
+SSB (таблица 03024) — основной ряд, полный для всех недель окна. Sjømatrådet (FOB, тариф 03021411) считает по тем же данным, но с отличиями в охвате и ревизиях, поэтому цифры расходятся на 0,2–2,2 NOK (например, нед. 20: SSB 77,29, Sjømatrådet 79,46). Отчёта Sjømatrådet за неделю 41 на сайте пока нет.
 
-«Spot/Sitagri» — справочные показатели другой природы (цена производителя, FCA Осло), в сравнение с экспортной ценой не входят.
+| Нед. | Даты | SSB свежий, NOK/кг | SSB, т | SSB заморож., NOK/кг | Sjømatrådet свежая целая, NOK/кг | Sjømatrådet филе свежее, NOK/кг | Целая, та же нед. 2025 |
+|---|---|---|---|---|---|---|---|
+| 14 ᵃ | 30 мар–5 апр | **89,13** | 16 503 | 63,72 | 89,15 | 173,08 | 77,46 |
+| 15 ᵃ | 6–12 апр | **85,17** | 18 610 | 75,37 | 87,09 | 137,97 | 79,55 |
+| 16 ᵃ | 13–19 апр | **77,31** | 20 224 | 71,61 | 78,10 | 134,13 | 98,77 |
+| 17 | 20–26 апр | **76,49** | 19 294 | 69,21 | 76,38 | 129,17 | 90,06 |
+| 18 | 27 апр–3 мая | **83,51** | 17 714 | 80,78 | 83,74 | 155,00 | 76,11 |
+| 19 | 4–10 мая | **82,58** | 21 966 | 68,27 | 85,02 | 133,62 | 75,79 |
+| 20 | 11–17 мая | **77,29** | 20 806 | 70,77 | 79,46 | 129,49 | 77,89 |
+| 21 | 18–24 мая | **73,94** | 22 386 | 65,27 | 74,50 | 126,16 | 78,68 |
+| 22 | 25–31 мая | **76,29** | 19 539 | 69,98 | 77,55 | 161,10 | 70,87 |
+| 23 | 1–7 июн | **72,78** | 22 409 | 74,77 | 72,70 | 128,01 | 72,38 |
+| 24 | 8–14 июн | **69,85** | 22 593 | 74,61 | 70,68 | 174,61 | 82,82 |
+| 25 | 15–21 июн | **70,31** | 25 866 | 74,01 | 70,33 | 127,31 | 76,37 |
+| 26 | 22–28 июн | **68,14** | 26 564 | 68,02 | 68,10 | 121,91 | 68,90 |
+| 27 | 29 июн–5 июл | **67,31** | 26 491 | 74,44 | 67,65 | 120,62 | 70,45 |
+| 28 | 6–12 июл | **69,54** | 26 117 | 72,32 | 70,56 | 164,25 | 67,42 |
+| 29 | 13–19 июл | **69,64** | 28 165 | 72,37 | 69,84 | 134,28 | 69,31 |
+| 30 | 20–26 июл | **71,31** | 25 822 | 72,08 | 71,31 | 122,97 | 66,09 |
+| 31 | 27 июл–2 авг | **73,57** | 26 958 | 72,79 | 73,58 | 122,94 | 61,43 |
+| 32 | 3–9 авг | **74,90** | 28 602 | 74,09 | 76,00 | 136,03 | 63,21 |
+| 33 | 10–16 авг | **72,66** | 28 762 | 69,12 | 73,74 | 124,00 | 64,45 |
+| 34 | 17–23 авг | **73,52** | 31 378 | 75,03 | 73,57 | 137,53 | 67,20 |
+| 35 | 24–30 авг | **71,87** | 30 487 | 72,94 | 72,02 | 130,75 | 66,36 |
+| 36 | 31 авг–6 сен | **69,71** | 30 798 | 68,07 | 71,98 | 131,87 | 71,22 |
+| 37 | 7–13 сен | **70,18** | 30 111 | 69,77 | 70,42 | 119,97 | 77,14 |
+| 38 | 14–20 сен | **71,41** | 31 087 | 73,09 | 72,50 | 118,43 | 78,73 |
+| 39 | 21–27 сен | **73,59** | 32 385 | 74,68 | 73,57 | 119,30 | 79,93 |
+| 40 | 28 сен–4 окт | **73,80** | 30 277 | 75,31 | 74,40 | 122,06 | 78,29 |
+| 41 | 5–11 окт | **72,55** | 27 982 | 72,12 | — | — | — |
 
-| Нед. | Даты | SSB | Объём SSB, т | Sjømatrådet (FOB) | Spot / Sitagri (справочно) |
+## Месячные цены SSB (таблица 08799, экспорт тарифа 03021411)
+
+Цена = экспортная стоимость ÷ вес за месяц по всем странам. Данные предварительные.
+
+| Месяц | Свежая целая, NOK/кг | Объём, т | Стоимость, млн NOK | Свежее филе, NOK/кг | Замороженная целая, NOK/кг |
 |---|---|---|---|---|---|
-| 16 | 13–19 апр | 77,31 | 20 224 | — | — |
-| 17 | 20–26 апр | 76,49 | 19 294 | — | 72,71 |
-| 18 | 27 апр–3 мая | 83,51 | 17 714 | 83,74 | — |
-| 19 | 4–10 мая | 82,58 | 21 966 | 85,02 | — |
-| 20 | 11–17 мая | 77,29 | — | — | — |
-| 21 | 18–24 мая | 73,94 | 22 386 | — | 70,52 |
-| 22 | 25–31 мая | н/д | — | 77,55 | 72,65 |
-| 23 | 1–7 июн | н/д | — | н/д | 68,38 |
-| 24 | 8–14 июн | н/д | — | н/д | 66,26 |
-| 25 | 15–21 июн | н/д | — | 70,33 | 66,26 |
-| 26 | 22–28 июн | н/д | — | 68,16 | 63,43 |
-| 27 | 29 июн–5 июл | н/д | — | 67,47 | — |
-| 28 | 6–12 июл | 69,54 | — | 70,56 | — |
-| 29 | 13–19 июл | 69,64 | 28 165 | 69,84 | — |
-| 30 | 20–26 июл | 71,31 | 25 822 | 71,31 | — |
-| 31 | 27 июл–2 авг | 73,57 | — | — | 70,35 |
-| 32 | 3–9 авг | 74,90 | — | — | 70,99 |
-| 33 | 10–16 авг | 72,66 | 28 762 | — | — |
-| 34 | 17–23 авг | 73,52 | — | — | — |
-| 35 | 24–30 авг | 71,87 | — | — | — |
-| 36 | 31 авг–6 сен | 69,71 | 30 798 | — | — |
-| 37 | 7–13 сен | 70,18 | 30 111 | 70,42 | — |
-| 38 | 14–20 сен | 71,41 | 31 087 | 72,50 | — |
-| 39 | 21–27 сен | 73,59 | 32 385 | 73,57 | — |
-| 40 | 28 сен–4 окт | 73,80 | 30 277 | 74,40 | 69,43 |
-| 41 | 5–11 окт | 72,55 | 27 982 | 73,24 | — |
+| апр 2026 | **81,35** | 81 723 | 6648,5 | 133,98 | 75,74 |
+| май 2026 | **77,73** | 86 853 | 6751,1 | 130,59 | 75,88 |
+| июн 2026 | **70,07** | 104 439 | 7317,7 | 124,78 | 74,63 |
+| июл 2026 | **70,28** | 121 686 | 8552,4 | 122,24 | 74,43 |
+| авг 2026 | **73,13** | 126 323 | 9238,6 | 122,95 | 73,85 |
+| сен 2026 | **71,60** | 133 248 | 9540,9 | 119,91 | 74,63 |
 
-н/д — не удалось найти. SSB-значения есть для 19 из 25 недель окна. Недели 22–27 у SSB отсутствуют, но для 22, 25, 26, 27 есть цифры Sjømatrådet. Для недель 23 и 24 нет ни одной экспортной цены.
+Месячные цифры Sjømatrådet в пресс-релизах немного выше, потому что охват продукта у них другой: апрель — 82,02 (SSB 81,35), июль — 71,48 (SSB 70,28), август — около 74 (SSB 73,13). В релизах за май и сентябрь цена за кг не названа, только объём и стоимость (май: 111 062 т лосося на 9,6 млрд NOK; сентябрь: 165 393 т на 13 млрд NOK, рекорд месяца).
 
 ## Итоги
 
-- **Диапазон по SSB в окне:** от 69,54 (нед. 28) до 83,51 (нед. 18); среднее арифметическое по 19 известным неделям — около 73,8 NOK/кг. По Sjømatrådet минимум 67,47 (нед. 27).
+- **Диапазон (SSB, 25 недель окна):** от 67,31 (нед. 27) до 83,51 (нед. 18). Средняя по неделям — 73,07, средняя с учётом объёма — 72,73 NOK/кг.
 - **Динамика:**
-  - Начало окна: 83,5 (нед. 18) и 82,6 (нед. 19), после этого обвал на 5–9 NOK за неделю: 77,3 (нед. 20), 73,9 (нед. 21).
-  - Июнь: 70 → 68 → 67,5 (нед. 25–27, Sjømatrådet). Это дно периода.
-  - Июль–октябрь: восстановление и боковик 70–75 с пиком 74,90 на нед. 32. Последняя неделя (41) — 72,55.
-- **Объёмы:** SSB показывает рост экспорта с 17–22 тыс. т в неделю в апреле–мае до 30–32 тыс. т в сентябре (нед. 39 — 32 385 т).
-- **К прошлому году:** нед. 40 на 5,0 % ниже 2025, нед. 39 на 7,9 % ниже, нед. 41 на 3,8 % ниже (75,38 в 2025). Летом, наоборот, выше: нед. 31 +21,4 %, нед. 32 +20,7 %, нед. 33 +12,9 %.
-- **Месячные средние (Sjømatrådet, свежая целая рыба):** апрель — **82,02 NOK/кг** (−1 % к 2025), июль — **71,48** (+8 %), август — около **74** (+14 %). По маю, июню и сентябрю подтверждённой цены за кг нет. Май: экспорт лосося 9,6 млрд NOK (+1 %), сентябрь: 13 млрд NOK и 165 393 т.
-- **Сентябрь 2026:** рекорд — 165 393 т лосося, около 13 млрд NOK (+22 % по объёму, +15 % по стоимости). Это совокупные данные по лососю, а не цена за кг свежей рыбы.
-- **Справочно, нед. 23:** индекс SISALMON — 6,33 USD/кг (−6,2 % за неделю, +5,7 % к году). Подтверждённой недельной серии SISALMON в NOK/EUR получить не удалось.
+  - Апрель – начало мая: 76–84 (нед. 17–19).
+  - Конец мая: резкое падение — 77,3 (нед. 20), 73,9 (нед. 21), 76,3 (нед. 22).
+  - Июнь – начало июля: дно периода 67,3–70,3 (нед. 24–28). Минимум — нед. 27.
+  - Июль – октябрь: восстановление до 74,90 (нед. 32), затем боковик 69,7–73,8. Последняя неделя (41) — 72,55.
+- **Объёмы:** SSB показывает рост экспорта свежего лосося с 17,7 тыс. т (нед. 18) до 32,4 тыс. т (нед. 39). Всего за 25 недель окна — 654 559 т.
+- **К прошлому году (Sjømatrådet, целая рыба):** в апреле – начале мая цена была выше 2025 (нед. 14: 89,15 против 77,46), с июня по начало сентября в большинстве недель выше (нед. 31: 73,58 против 61,43; нед. 32: 76,00 против 63,21), с сентября ниже (нед. 39: 73,57 против 79,93; нед. 40: 74,40 против 78,29). Номера недель 2026 и 2025 смещены почти на неделю, поэтому сравнение приблизительное.
+- **Свежее филе (Sjømatrådet):** цена снижалась с 133,98 в апреле (SSB) до 119,91 в сентябре. В нед. 40: 122,06 против 134,17 годом ранее.
+- **Рынки (свежая целая рыба, нед. 17–40, средняя по объёму, Sjømatrådet):** ЕС27 — 70,56, Польша — 68,11, Нидерланды — 72,48, Франция — 71,48, Великобритания — 75,56, США — 81,20, Китай — 83,62, Южная Корея — 82,20, Япония — 92,92. Разбивка по странам по каждой неделе — в `sjomatradet_weekly_by_market_2026.csv`.
 
-## Что подтверждено хуже
+## Ограничения
 
-1. **Первоисточники закрыты.** Сетевая политика окружения блокирует data.ssb.no, ssb.no, seafood.no, fishpool.eu, euronext.com. Все цифры взяты из выдержек веб-поиска, таблицы SSB 03024 я не открывал.
-2. **Часть значений — пересказы.** Цены SSB за недели 28, 31–36, 41 идут от Salmon Business, Radio Nordkapp, DinBedrift; значения Sjømatrådet за недели 37–41 — от IndexBox. Цифры за недели 16–21 и 37 — от Fisk.no, Radio Nordkapp и Oppdrett.info, которые перепечатывают SSB.
-3. **Расхождения между изданиями.**
-   - Нед. 32: 74,90 / 74,91 / 74,94.
-   - Нед. 26: Sjømatrådet 68,10 (PDF) против 68,16 (таблица Akvafakta).
-   - Нед. 28: SSB 69,54 против Akvafakta 70,56.
-   - Нед. 36: SSB 69,71; отдельный фрагмент отчёта Sjømatrådet называл 71,98, подтвердить не удалось, поэтому в таблицу он не включён.
-4. **Не включено из-за неясного года:** «77,06 NOK/кг, нед. 20» и «68,74 NOK/кг, нед. 26» у DinBedrift (по возрасту статей это, вероятно, 2025). Июльское 71,48 и августовское ~74 приведены по пересказам пресс-релизов Sjømatrådet (Perishable News, Aquafeed, Kyst og Fjord), оригиналы не открывал; июль согласуется с недельными ценами 69,5–73,6.
-5. Значения Sjømatrådet за недели 19, 22, 25 взяты из выдержек PDF, где колонки разобраны неидеально.
+1. **Нед. 41 у Sjømatrådet:** PDF-отчёта нет. Значение 73,24 (28 075 т), которое мне встречалось в пересказах, в таблицу не включено.
+2. **Индекс SISALMON (Fish Pool/Euronext):** не получен. Страница fishpool.eu требует JavaScript, а цены индекса лицензируются. Если он нужен, дайте доступ к подписке или данным.
+3. **Месячные цены Sjømatrådet за май, июнь, сентябрь:** в пресс-релизах их нет; есть только цены SSB из таблицы 08799.
+4. **Ревизии:** SSB уточняет недельные цифры задним числом, значения могут слегка измениться.
+5. **Недельное филе (Sjømatrådet):** в неделях 18, 22, 24 и 28 цена свежего филе 155,00 / 161,10 / 174,61 / 164,25 NOK/кг заметно выше типичных 120–138 и не согласуется с месячными данными SSB (июнь — 124,78). Значения такие, как напечатаны в отчётах; разобрать причину я не смог. Месячная цена SSB по филе надёжнее.
+6. **Spot-цены Akvafakta и Sitagri** в таблицу не входят: это цены производителей, а не экспортные.
 
-## Как закрыть оставшиеся пропуски
+## Файлы
 
-Нужен доступ к `data.ssb.no`, `www.seafood.no`, `fishpool.eu` (Network access в настройках окружения). Тогда за один запрос выгружается вся серия:
-
-- SSB API, таблица 03024: `https://data.ssb.no/api/v0/en/table/03024`
-- Недельные PDF Sjømatrådet: `https://www.seafood.no/globalassets/markedsinnsikt/apne-rapporter/ukestatistikk/2026/uke-NN/ukestat-laks-og-orret-uke-NN.pdf`
-- SISALMON: `https://fishpool.eu/sisalmoni/`
+- `norway_salmon_weekly_2026.csv` — недельная сводка SSB + Sjømatrådet
+- `ssb_03024_raw_2026U14-U41.csv` — сырой выгруз SSB, таблица 03024
+- `ssb_monthly_2026.csv` — месячные данные SSB, таблица 08799 (целая и филе, свежая и замороженная)
+- `sjomatradet_weekly_by_market_2026.csv` — недельные данные Sjømatrådet по странам и продуктам
 
 ## Источники
 
-- SSB: [Eksport av laks](https://www.ssb.no/utenriksokonomi/utenrikshandel/statistikk/eksport-av-laks), [статьи серии](https://www.ssb.no/utenriksokonomi/utenrikshandel/statistikk/eksport-av-laks/artikler), [Salmon export price](https://www.ssb.no/en/utenriksokonomi/utenrikshandel/statistikk/eksport-av-laks/artikler/salmon-price)
-- Fisk.no (по данным SSB): [нед. 18](https://fisk.no/oppdrett/7947-eksportprisen-opp-7-02-kroner-i-veke-18), [нед. 21 с таблицей нед. 19](https://fisk.no/oppdrett/7960-lakseprisen-ned-3-35-kroner-i-veke-21)
-- Radio Nordkapp (по данным SSB): [нед. 33](https://www.radionordkapp.no/nyheter/34318/endring-i-pris-for-eksport-av-fersk-laks/), [нед. 37](https://www.radionordkapp.no/nyheter/34583/30-111-tonn-fersk-laks-eksportert-fra-norge/), [нед. 41](https://www.radionordkapp.no/nyheter/34847/redusert-pris-og-kvantum-for-eksport-av-fersk-laks/)
-- Oppdrett.info (по данным SSB): [Salmon price](https://oppdrett.info/laksepris?lang=en), [нед. 37](https://oppdrett.info/laksepris/uke/2026/37)
-- DinBedrift (по данным SSB): [нед. 3](https://dinbedrift.no/lakseprisen-falt-i-uke-3-eksportvolumet-opp-for-fersk-laks/), [нед. 29](https://dinbedrift.no/lakseprisen-steg-svakt-i-uke-29/)
-- Sjømatrådet, недельные отчёты: [нед. 14](https://www.seafood.no/globalassets/markedsinnsikt/apne-rapporter/ukestatistikk/2026/uke-14/ukestat-laks-og-orret-uke-14.pdf), [нед. 18](https://www.seafood.no/globalassets/markedsinnsikt/apne-rapporter/ukestatistikk/2026/uke-18/ukestat-laks-og-orret-uke-18.pdf), [нед. 19](https://en.seafood.no/globalassets/markedsinnsikt/apne-rapporter/ukestatistikk/2026/uke-19/ukestat-laks-og-orret-uke-19.pdf), [нед. 25](https://en.seafood.no/globalassets/markedsinnsikt/apne-rapporter/ukestatistikk/2026/uke-25/ukestat-laks-og-orret-uke-25.pdf), [нед. 26](https://en.seafood.no/globalassets/markedsinnsikt/apne-rapporter/ukestatistikk/2026/uke-26/ukestat-laks-og-orret-uke-26.pdf), [нед. 29](https://en.seafood.no/globalassets/markedsinnsikt/apne-rapporter/ukestatistikk/2026/uke-29/ukestat-laks-og-orret-uke-29.pdf), [нед. 30](https://www.seafood.no/globalassets/markedsinnsikt/apne-rapporter/ukestatistikk/2026/uke-30/ukestat-laks-og-orret-uke-30.pdf), [нед. 36](https://www.seafood.no/globalassets/markedsinnsikt/apne-rapporter/ukestatistikk/2026/uke-36/ukestat-laks-og-orret-uke-36.pdf)
-- Sjømatrådet, месячные и сводные: [апрель](https://www.seafood.no/aktuelt/nyheter/styrket-krone-trakk-ned-sjomateksporten-i-april/), [сентябрь](https://www.mynewsdesk.com/seafood/pressreleases/no-growth-in-norwegian-seafood-exports-in-september-despite-record-high-salmon-volumes-3470674)
-- Akvafakta, недельная таблица (нед. 26–29): [siste.pdf](https://akvafakta.no/wp-content/uploads/Ukestat/siste.pdf)
-- Salmon Business (пересказ SSB): [нед. 32](https://www.salmonbusiness.com/statistics-norway-salmon-price-up-21-year-on-year-in-week-32/), [нед. 33–34](https://www.salmonbusiness.com/statistics-norway-salmon-export-price-falls-3-as-volumes-rise/), [нед. 39](https://www.salmonbusiness.com/statistics-norway-week-39-exports-jump-38-as-price-rises-above-e6-70-kg), [нед. 40](https://www.salmonbusiness.com/statistics-norway-export-prices-edge-higher-as-weekly-volumes-fall/)
-- IndexBox (пересказ Sjømatrådet и Sitagri): [нед. 22](https://www.indexbox.io/blog/norwegian-fresh-salmon-exports-rise-in-week-22-of-2026/), [нед. 37](https://www.indexbox.io/blog/norwegian-fresh-salmon-exports-rise-in-week-37-while-prices-ease/), [нед. 38](https://www.indexbox.io/blog/norwegian-fresh-salmon-exports-rise-in-week-38-of-2026/), [нед. 39](https://www.indexbox.io/blog/norwegian-salmon-exports-rise-in-week-39-of-2026-as-prices-slip/), [нед. 40](https://www.indexbox.io/blog/norwegian-fresh-salmon-exports-rise-in-week-40-of-2026/), [нед. 41](https://www.indexbox.io/blog/norwegian-fresh-salmon-exports-rise-in-week-41-of-2026/), [Sitagri, нед. 21](https://www.indexbox.io/blog/norwegian-salmon-prices-decline-again-in-q2-2026-sitagri-data-shows/), [Q2 2026](https://www.indexbox.io/blog/norwegian-salmon-export-prices-decline-in-q2-2026-amid-rising-volumes/)
-- Месячные данные Sjømatrådet в пересказах: [июль (Perishable News)](https://perishablenews.com/seafood/record-levels-of-norwegian-seafood-exports-in-july/), [август (Kyst og Fjord)](https://www.kystogfjord.no/debatt/o/K8kld4/sterk-sommer-for-sjoematen), [сентябрь, iLaks](https://ilaks.no/rekordvolumer-loftet-lakseeksporten-til-nye-hoyder-i-september/)
-- Справочно: [SeafoodSource, нед. 23](https://www.seafoodsource.com/news/supply-trade/atlantic-salmon-from-norway-drops-in-price-again-in-week-23), [FishFarmingExpert, нед. 40](https://www.fishfarmingexpert.com/salmon-spot-price/norway-salmon-spot-price-climbed-close-to-nok-70-per-kilo-last-week/2193273), [Fish Pool SISALMON](https://fishpool.eu/sisalmoni/), [Infosalmon Market Update Jun 26](https://infosalmon.cl/wp-content/uploads/2026/06/Market-Update-Jun-26.pdf)
+- SSB, таблица 03024: https://data.ssb.no/api/v0/en/table/03024
+- SSB, таблица 08799: https://data.ssb.no/api/v0/en/table/08799
+- Sjømatrådet, недельные отчёты: https://www.seafood.no/globalassets/markedsinnsikt/apne-rapporter/ukestatistikk/2026/uke-NN/ukestat-laks-og-orret-uke-NN.pdf (NN = номер недели, 14–40)
+- Sjømatrådet, месячные релизы: [апрель](https://www.seafood.no/aktuelt/nyheter/styrket-krone-trakk-ned-sjomateksporten-i-april/), [май](https://www.seafood.no/aktuelt/nyheter/lavere-volum-og-styrket-krone-ga-verdinedgang-for-sjomateksporten-i-mai/), [сентябрь](https://www.mynewsdesk.com/no/seafood/pressreleases/ingen-vekst-i-sjoemateksporten-til-tross-for-historisk-hoeye-laksevolum-3470673)
